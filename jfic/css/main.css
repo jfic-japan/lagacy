@@ -110,7 +110,8 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
+/*    color: white;*/
+    color: black;
     background: #e44d26;
 }
 
@@ -156,18 +157,32 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/*
 .asobiba {
     background: grey;
 }
+*/
 
-.header-image img {
-    height: 2em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.header-container header {
+    background: blue;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
 }
 
+.jfic-header img {
+    width: 20%;
+    max-width: 100px;
+    vertical-align: middle;
+}
+.jfic-header h1{
+    display: inline;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+.top-image-container {
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
 .top-image img {
     max-width: 100%;
     height: auto;
@@ -178,107 +193,82 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.introduction p {
-    text-align: center;
-    font-size: smaller;
+
+.items-container {
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    background: yellow;/*temp*/
 }
-*/
+
+.topics, .about-indoorcycling {/*temp*/
+    background: aqua;
+}
+
+.about-cb img {
+    display: block;
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+
+}
+
+.about-cf img {
+    display: block;
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.intro {
+    background: blue;
+}
+
+.SNS img {
+    float: left;
+    width: 30%;
+    background: green;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+}
+
+.SNS p {
+    float: right;
+    width: 70%;
+    background: green;
+    display: inline;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+}
+
+.sns-item
+{
+    background: white;
+}
+
+.bnr img {
+    max-width: 48%;
+    margin: 0 auto 2% auto;
+}
+.bnr li {
+    display: inline;
+}
+
+.bnr ul {
+    background: yellow;
+}
+
+
 /*@media only screen and (min-width: 480px) {*/
 @media only screen and (max-width: 768px) {
-    .introduction p {
-        text-align: center;
-        font-size: smaller;
-    }
-    .what-is-indoorcycling p {
-        font-size: x-small;
-    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    .introduction p {
-        text-align: center;
-        font-size: medium;
-    }
-    .introduction br {
-        display: none;
-    }
-    .what-is-indoorcycling p {
-        font-size: 1em;
-    }
-
     
 }
 /*
 @media only screen and (min-width: 1140px) {
 }*/
-
-.what-is-indoorcycling {
-    background-color: #6ab0e3;
-    margin: 0 0 0 0;
-    padding: 20px 0 10px 0;
-}
-
-.what-is-indoorcycling img{
-    width: 100%;
-    height: auto;
-}
-
-.what-is-indoorcycling p {
-    text-align: center;
-    background-color: blue;
-    color: white;
-    margin: 0 0 0 0;
-    padding: 0.5em 0 0.5em 0;
-    /*グラデーション等を加えたい*/
-    /*画像の上にオーバーレイさせたい*/
-}
-
-.what-is-cycleball {
-    width: 48%;
-    height: auto;
-    float: left;
-}
-
-.what-is-archisticcycle {
-    width: 48%;
-    height: auto;
-    float: right;
-}
-
-.info p {
-    font-size: 1em;/*x-small;*/
-    text-align: center; /*center;*/
-    background-color: blue;
-    color: white;
-    margin: 0 0 0 0;
-    padding: 0.5em 0 0.5em 0;
-    /*グラデーション等を加えたい*/
-}
-
-.info {
-    background-color: #6ab0e3;
-    padding: 0 0 20px 0;
-}
-
-.info_box_left {
-    width: 48%;
-    height: auto;
-    float: left;
-    margin: 10px 0 0 0;
-}
-
-.info_box_right {
-    width: 48%;
-    height: auto;
-    float: right;
-    margin: 10px 0 0 0;
-}
-
-
-
-
-
 
 
 /* ==========================================================================
