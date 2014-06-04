@@ -79,13 +79,13 @@ body {
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #319ed1;
+/*    border-top: 20px solid #319ed1;*/
 }
 
 .header-container,
 .footer-container,
 .main aside {
-/*   background: #6ab0e3;*/
+/*    background: #6ab0e3;*/
 }
 
 .title {
@@ -173,8 +173,7 @@ h2 {
 }
 
 .main aside {
-/*    color: white;*/
-    padding: 0px 5% 10px;
+/*  padding: 0px 5% 10px;*/
 }
 
 .footer-container footer {
@@ -345,7 +344,12 @@ a.more {
 }
 
 @media only screen and (min-width: 768px) {
-    
+
+/*
+.main aside {
+     padding: 0px 5% 10px;
+}
+*/
 }
 /*
 @media only screen and (min-width: 1140px) {
@@ -411,12 +415,14 @@ a.more {
     WIDE: CSS3 Effects
    ==================== */
 
+/*
     .header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0px 5px 10px #aaa;
     }
+    */
 
 /* ============
     WIDE: Menu
@@ -443,7 +449,7 @@ a.more {
 
     .main aside {
         float: right;
-        width: 28%;
+        width: 40%;
     }
 }
 
