@@ -74,7 +74,7 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 5px solid #319ed1;
+/*    border-bottom: 5px solid #319ed1;*/
 }
 
 .footer-container,
@@ -85,7 +85,7 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #6ab0e3;
+/*   background: #6ab0e3;*/
 }
 
 .title {
@@ -95,12 +95,13 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
-
+/*
 nav ul {
     margin: 0;
     padding: 0;
 }
-
+*/
+/*
 nav a {
     display: block;
     margin-bottom: 10px;
@@ -110,10 +111,10 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-/*    color: white;*/
-    color: black;
+    color: white;
     background: #e44d26;
 }
+*/
 
 nav a:hover,
 nav a:visited {
@@ -129,21 +130,55 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 1em 0;
 }
 
-.main article h1 {
-    font-size: 2em;
+h1{
+    font-size: 1.5em;
+    font-family: serif;
+    border-left: 8px solid #555bb1;
+    padding: 0.5em 0 3px 5px;
+    border-bottom: 1px solid #555bb1;
+}
+.main aside h1{
+    font-size: 1.2em;
+    font-family: serif;
+    border-left: 4px solid #555bb1;
+    padding: 0.3em 0 1px 5px;
+    border-bottom: 1px solid #555bb1;
+}
+.main article h1:first-letter {
+    font-size: 1.8em;
+    font-family: serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+    font-family: serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#6673b4 0%, #bec8d4 100%);
+    background: -moz-linear-gradient(#6673b4 0%, #bec8d4 100%);
+    background: linear-gradient(#6673b4 0%, #bec8d4 100%);
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    box-shadow:rgba(255, 255, 255, 1) 0px 0px 6px 3px inset;
+    -webkit-box-shadow:rgba(255, 255, 255, 1) 0px 0px 6px 3px inset;
+    -moz-box-shadow:rgba(255, 255, 255, 1) 0px 0px 6px 3px inset;
+    padding: 0.5em;
+    padding-left: 1em;
 }
 
 .main aside {
-    color: white;
+/*    color: white;*/
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
-    padding: 20px 0;
+    padding: 0;
 }
 
 /* ===============
@@ -164,20 +199,26 @@ nav a:hover {
 */
 
 .header-container header {
-    background: blue;
     max-width: 960px;
     margin: 0 auto 0 auto;
 }
 
 .jfic-header img {
+    display: block;
     width: 20%;
     max-width: 100px;
     vertical-align: middle;
+    outline: 1px black solid;
+    float: left;
 }
 .jfic-header h1{
-    display: inline;
+    float: left;
     font-size: 1em;
-    margin-left: 0.5em;
+    font-family: serif;
+    padding: 0;
+    border: 1px black solid;
+    vertical-align: middle;
+    color: #050642;
 }
 .top-image-container {
     max-width: 960px;
@@ -197,19 +238,75 @@ nav a:hover {
 .items-container {
     max-width: 960px;
     margin: 0 auto 0 auto;
-    background: yellow;/*temp*/
 }
 
-.topics, .about-indoorcycling {/*temp*/
-    background: aqua;
+/** menu bar customize **/
+nav.menu {
+    margin: 0.5em auto 0 auto;
 }
 
+nav.menu ul {
+    padding: 0;
+    margin: 0 auto;
+    background: #080544;
+}
+
+nav.menu a {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0 0 0 0;
+    background: -webkit-linear-gradient(#2f2f85 0%, #080544 100%);
+    background: -moz-linear-gradient(#2f2f85 0%, #080544 100%);
+    background: linear-gradient(right, #2f2f85 0%, #080544 10%, #080544 90%, #2f2f85 100%);
+}
+
+nav.menu ul li.item_indoor {
+    margin: 0 auto;
+    float: left;
+    width: 50%;
+    font-size: smaller;
+    
+}
+nav.menu ul li.item_menu {
+    margin: 0 auto;
+    float: left;
+    width: 20%;
+    font-size: smaller;
+}
+
+dl.information-link dt {
+    margin: 0;
+    padding: 0;
+    color: #777;
+    width: 98%;
+    margin: 0 auto 0 auto;
+    font-size: 0.8em;
+    border-top: 1px solid #ccc;
+}
+
+dl.information-link dd {
+    margin: 0 2% 0 2%;
+    color: #2f2ff0;
+    font-weight: bold;
+}
+
+dl.information-link a {
+    text-decoration: none;
+}
+
+a.more {
+    display: block;
+    text-align: right;
+    font-size: small;
+}
 .about-cb img {
     display: block;
     float: left;
     width: 48%;
     margin-right: 2%;
-
 }
 
 .about-cf img {
@@ -219,14 +316,9 @@ nav a:hover {
     margin-left: 2%;
 }
 
-.intro {
-    background: blue;
-}
-
 .SNS img {
     float: left;
     width: 30%;
-    background: green;
     vertical-align: middle;
     margin: 0 0 0 0;
 }
@@ -234,15 +326,9 @@ nav a:hover {
 .SNS p {
     float: right;
     width: 70%;
-    background: green;
     display: inline;
     vertical-align: middle;
     margin: 0 0 0 0;
-}
-
-.sns-item
-{
-    background: white;
 }
 
 .bnr img {
@@ -252,11 +338,6 @@ nav a:hover {
 .bnr li {
     display: inline;
 }
-
-.bnr ul {
-    background: yellow;
-}
-
 
 /*@media only screen and (min-width: 480px) {*/
 @media only screen and (max-width: 768px) {
@@ -281,6 +362,7 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
+/*
     nav a {
         float: left;
         width: 27%;
@@ -288,26 +370,39 @@ nav a:hover {
         padding: 25px 2%;
         margin-bottom: 0;
     }
+*/
+/*
+    nav a {
+        float: left;
+        width: 27%;
+    }
+*/
 
+/*
     nav li:first-child a {
         margin-left: 0;
     }
+*/
 
+/*
     nav li:last-child a {
         margin-right: 0;
     }
+*/
 
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
-
+/*
     nav ul li {
         display: inline;
     }
-
+*/
+/*
     .oldie nav a {
         margin: 0 0.7%;
     }
+*/
 }
 
 @media only screen and (min-width: 768px) {
@@ -330,11 +425,12 @@ nav a:hover {
     .title {
         float: left;
     }
-
+/*
     nav {
         float: right;
         width: 38%;
     }
+*/
 
 /* ============
     WIDE: Main

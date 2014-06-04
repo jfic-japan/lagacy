@@ -24,7 +24,7 @@
         <![endif]-->
 
         <div class="header-container">
-            <header class="jfic-header">
+            <header class="jfic-header clearfix">
                 <img src="img/header/JFIC.gif">
                 <h1>日本室内自転車競技連盟</h1>
             </header>
@@ -38,13 +38,19 @@
 
         <div class="items-container">
             <div class="items">
-                 <nav>
-                     <ul>
-                          <li><a href="#">nav ul li a</a></li>
-                          <li><a href="#">nav ul li a</a></li>
-                          <li><a href="#">nav ul li a</a></li>
-                     </ul>
-                 </nav>
+                <nav class="menu">
+                    <ul class="clearfix">
+                        <li class="item_indoor"><a href="#">サイクルサッカーとは</a></li>
+                        <li class="item_indoor"><a href="#">サイクルフィギュアとは</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="item_menu"><a href="#">Home</a></li>                     
+                        <li class="item_menu"><a href="#">Topics</a></li>
+                        <li class="item_menu"><a href="#">大会情報</a></li>
+                        <li class="item_menu"><a href="#">FAQ</a></li>                                                    
+                        <li class="item_menu"><a href="#">JFICとは</a></li>                                                                              
+                    </ul>
+                </nav>
             </div>
         </div>
 
@@ -52,19 +58,28 @@
             <div class="main wrapper clearfix">
                 <article>
                     <div class="topics">
-                        <h1>topics</h1>
-                            <ul>
-                                <li>
-                                    <a href="#"> バルカーカップが開催されます。
-                                    <span class="date">2014年5月15日</span></a>
-                                </li>
-                                <li><a href="#">バルカーカップが開催されます。
-                                    <span class="date">2014年5月15日</span></a>
-                                </li>
-                                <li><a href="#"> バルカーカップが開催されます。
-                                    <span class="date">2014年5月15日</span></a>
-                                </li>
-                            </ul>
+                        <h1>Topics</h1>
+                        <dl class="information-link">                       
+                            <a href="#">
+                            <dt>2014年5月15日</dt>
+                                <dd>バルカーカップが開催されます。</dd>
+                            </a>
+                            <a href="#">
+                            <dt>2014年5月15日</dt>
+                                <dd>バルカーカップが開催されます。
+                                長い文章が入るとこうなります。
+                                文字数制限とか人的な制御が必要になるかな・・・。</dd>
+                            </a>
+                            <a href="#">
+                            <dt>2014年5月15日</dt>
+                                <dd>バルカーカップが開催されます。</dd>
+                            </a>
+                            <a href="#">
+                            <dt>2014年5月15日</dt>
+                                <dd>バルカーカップが開催されます。</dd>
+                            </a>
+                        </dl>
+                        <a href="#" class="more">>> Topics一覧</a>
                     </div>
                     <div class="about-indoorcycling">
                         <h1>競技紹介</h1>
@@ -78,8 +93,9 @@
                                     入ったときは、どうなるのかな？？？？？？
                                     全部右にしたいときは、img要素のmarginを調整するとか
                                     やりようはある気がする。
-                                    </p>
+                                </p>
                             </div>
+                            <a href="#" class="more">>> もっと詳しく</a>
                         </div>
                                                 
                         <div class="about-cf">
@@ -91,6 +107,7 @@
                                     かくかくしかじか
                                 </p>
                             </div>
+                            <a href="#" class="more">>> もっと詳しく</a>                        
                         </div>
                     </div>
                 </article>
