@@ -176,8 +176,18 @@ h2 {
 /*  padding: 0px 5% 10px;*/
 }
 
+.footer-container{
+    border-top: 1px solid #bcbcbc;
+}
+
 .footer-container footer {
     padding: 0;
+}
+.footer-container footer p {
+    text-align: center;
+    font-size: smaller;
+    color: #b3b3b3;
+    font-family: serif;
 }
 
 /* ===============
@@ -191,34 +201,29 @@ h2 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*
-.asobiba {
-    background: grey;
-}
-*/
 
 .header-container header {
     max-width: 960px;
     margin: 0 auto 0 auto;
 }
-
-.jfic-header img {
+header.jfic-header img {
     display: block;
     width: 20%;
-    max-width: 100px;
-    vertical-align: middle;
-    outline: 1px black solid;
+    max-width: 120px;
+    min-width: 75px;
     float: left;
 }
-.jfic-header h1{
+header.jfic-header p#site-title{
     float: left;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: serif;
-    padding: 0;
-    border: 1px black solid;
-    vertical-align: middle;
     color: #050642;
+    padding: 0;
+    margin-left: 1em;
+    margin-top: 4%;
+    margin-bottom: 0%;
 }
+
 .top-image-container {
     max-width: 960px;
     margin: 0 auto 0 auto;
