@@ -74,18 +74,14 @@ body {
    =================== */
 
 .header-container {
-/*    border-bottom: 5px solid #319ed1;*/
+    border-bottom: 1px solid #bcbcbc;
 }
 
-.footer-container,
-.main aside {
-/*    border-top: 20px solid #319ed1;*/
+.header-container{
+    background: -webkit-linear-gradient(#fff 0%, #999 100%);
 }
-
-.header-container,
-.footer-container,
-.main aside {
-/*    background: #6ab0e3;*/
+.footer-container { 
+    background: -webkit-linear-gradient(#999 0%, #fff 100%);
 }
 
 .title {
@@ -178,16 +174,21 @@ h2 {
 
 .footer-container{
     border-top: 1px solid #bcbcbc;
+    margin: 0;
 }
 
 .footer-container footer {
-    padding: 0;
+    padding: 1em;
+
 }
 .footer-container footer p {
     text-align: center;
     font-size: smaller;
     color: #b3b3b3;
     font-family: serif;
+    padding: 0;
+    margin: 0;
+     
 }
 
 /* ===============
@@ -201,43 +202,61 @@ h2 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 .header-container header {
     max-width: 960px;
     margin: 0 auto 0 auto;
 }
 header.jfic-header img {
-    display: block;
     width: 20%;
-    max-width: 120px;
-    min-width: 75px;
-    float: left;
+    max-width: 100px;
+    min-width: 70px;
+    vertical-align: middle;
+    margin-left: 0.5em;
 }
 header.jfic-header p#site-title{
-    float: left;
-    font-size: 1.2em;
+    display: inline;
+    vertical-align: middle;
+    font-size: 1em;
     font-family: serif;
     color: #050642;
     padding: 0;
-    margin-left: 1em;
-    margin-top: 4%;
-    margin-bottom: 0%;
 }
 
 .top-image-container {
     max-width: 960px;
     margin: 0 auto 0 auto;
 }
-.top-image img {
-    max-width: 100%;
-    height: auto;
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0px 5px 10px #aaa;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+@media only screen and (max-width: 768px) {
+    #top-image img#Mob_top {
+        max-width: 100%;
+        -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0px 5px 10px #aaa;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #top-image img#PC_top {
+        display: none;
+    }
 }
+
+@media only screen and (min-width: 768px) {
+    #top-image img#PC_top {
+        max-width: 100%;
+        -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0px 5px 10px #aaa;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #top-image img#Mob_top {
+        display: none;
+    }
+}
+
 
 .items-container {
     max-width: 960px;
@@ -320,19 +339,37 @@ a.more {
     margin-left: 2%;
 }
 
-.SNS img {
-    float: left;
-    width: 30%;
-    vertical-align: middle;
-    margin: 0 0 0 0;
+
+.SNS a {
+    display: block;
+    border: 2px solid #b0b0b0;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    text-decoration: none;
+    color: inherit;
 }
 
-.SNS p {
-    float: right;
-    width: 70%;
+.SNS a:hover {
+    border: 2px solid #424242;
+}
+
+.sns-item {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.sns-item img {
+    width: 15%;
+    vertical-align: middle;
+    margin: 2% 0 2% 5%;
+}
+
+.sns-item p {
+    width: 75%;
     display: inline;
     vertical-align: middle;
-    margin: 0 0 0 0;
+    margin: 0 0 0 5%;
+    font-family: sans-serif;
 }
 
 .bnr img {
@@ -458,14 +495,14 @@ a.more {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 960px) {
 
 /* ===============
     Maximal Width
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 864px; /* 960px - 10% for margins*/
         margin: 0 auto;
     }
 }
