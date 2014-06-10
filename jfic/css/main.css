@@ -318,6 +318,10 @@ dl.information-link dd {
 
 dl.information-link a {
     text-decoration: none;
+    display: block;
+}
+dl.information-link a:active {
+    background: #bfbfbf;    
 }
 
 a.more {
