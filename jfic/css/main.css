@@ -328,15 +328,15 @@ a.more {
 .about-cb img {
     display: block;
     float: left;
-    width: 48%;
-    margin-right: 2%;
+    width: 55%;
+    margin-right: 5%;
 }
 
 .about-cf img {
     display: block;
     float: right;
-    width: 48%;
-    margin-left: 2%;
+    width: 55%;
+    margin-left: 5%;
 }
 
 
@@ -372,12 +372,26 @@ a.more {
     font-family: sans-serif;
 }
 
-.bnr img {
-    max-width: 48%;
-    margin: 0 auto 2% auto;
+.sponsor-partner {
+    width: 100%;
+}
+.sponsor-partner .bnr ul {
+    margin: 0 5% 0 5%;
+    width: 90%;
+    padding: 0;
+}
+.bnr img{
+    max-width: 40%;
+    margin: 1% 0 3% 0;
+    vertical-align: middle;
 }
 .bnr li {
     display: inline;
+    margin-left: 6%;
+    margin-top: 2%; 
+    margin-bottom: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /*@media only screen and (min-width: 480px) {*/
