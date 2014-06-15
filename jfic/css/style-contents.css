@@ -2,6 +2,44 @@
 
    ========================================================================== */
 
+.headline {
+    max-width: 960px;
+    margin: 0 auto 10px auto;
+}
+
+
+/*breadcrumb list*/
+nav.breadcrumb-list {
+    margin-left: 1em;
+    padding: 0;
+}
+ol#breadcrumb-topics {
+    margin: 0;
+    padding: 0;
+}
+nav.breadcrumb-list ol#breadcrumb-topics li {
+    font-size: small;
+    color: #333333;
+    float: left;
+}
+nav.breadcrumb-list ol#breadcrumb-topics li a {
+    color: #333333;
+}
+nav.breadcrumb-list ol#breadcrumb-topics li a:hover {
+    color: #9c9c9c;
+    text-decoration: none;
+}
+
+.main {
+    margin-top: 0;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 /*breadcrumb list
 nav.breadcrumb-list li {
     float: left;
