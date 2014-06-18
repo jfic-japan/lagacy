@@ -197,6 +197,7 @@ h2 {
     margin: 0;
     padding: 0;
     font-size:x-small;
+    
 }
 
 
@@ -310,7 +311,8 @@ nav.menu a:active{
     background: #7e8096;
 }
 
-nav.menu ul li.item_indoor {
+nav.menu ul li.item_indoor,
+nav.menu ul li.item_half {
     margin: 0 auto;
     float: left;
     width: 50%;
@@ -320,17 +322,33 @@ nav.menu ul li.item_menu {
     float: left;
     width: 20%;
 }
+nav.menu ul li.item_about_short {
+    margin: 0 auto;
+    float: left;
+    width: 20%;
+}
+
+
 @media only screen and (max-width: 767px){
     nav.menu ul li.item_indoor,
-    nav.menu ul li.item_menu {
+    nav.menu ul li.item_menu, 
+    nav.menu ul li.item_about,
+    nav.menu ul li.item_half,
+    nav.menu ul li.item_half_last {
         font-size: smaller;
     }
 }
 @media only screen and (min-width: 768px){
     nav.menu ul li.item_indoor,
-    nav.menu ul li.item_menu {
+    nav.menu ul li.item_menu,
+    nav.menu ul li.item_about,
+    nav.menu ul li.item_indoor,
+    nav.menu ul li.item_half_last {
         font-size: middle;
     }   
+    nav.menu ul li.item_about_short {    
+        width:25%;
+    }
 }
 
 dl.information-link dt {
@@ -362,14 +380,15 @@ a.more {
     text-align: right;
     font-size: small;
 }
-.about-cb img {
+
+.about-photo-left img {
     display: block;
     float: left;
     width: 55%;
     margin-right: 5%;
 }
 
-.about-cf img {
+.about-photo-right img {
     display: block;
     float: right;
     width: 55%;

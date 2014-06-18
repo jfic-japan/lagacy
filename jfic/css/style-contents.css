@@ -37,77 +37,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-
-
-/*breadcrumb list
-nav.breadcrumb-list li {
-    float: left;
-    line-height: 20px;
+h1.subpage-headline {
+    margin: 1em auto 0 auto;
 }
 
-nav.breadcrumb-list li a {
-    float: left;
-    display: block;
-    color: #787878;
-    background: #e2e5f2;
-    padding: 0 10px 0 15px;
-    text-decoration: none;
-    font-size: small;
-}
-nav.breadcrumb-list li a::after {
-    position: relative;
-    display: block;
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: -15px;
-    height: 10px;
-    width: 10px;
-    content: " ";
-    -webkit-transform: skew(-30deg);
-    background: #e2e5f2;
-    border-right: 2px solid white;
-}
-nav.breadcrumb-list li a::before {
-    float: right;
-    display: block;
-    margin-bottom: -10px;
-    margin-left: auto;
-    margin-right: -15px;
-    height: 10px;
-    width: 10px;
-    content: " ";
-    -webkit-transform: skew(30deg);
-    background: #e2e5f2;
-    border-right: 2px solid white;
-}
-
-nav.breadcrumb-list li:last-child {
-    color: black;
-    padding-left: 10px;
-    background: transparent !important;
-    font-weight: 100;
-    font-size: small;
-}
-
-nav.breadcrumb-list li:first-child a{
-    color: white;
-    text-decoration: none;
-    padding-left: 10px;
-    background:#1a8fe2;
-}
-
-nav.breadcrumb-list li:first-child a::after,
-nav.breadcrumb-list li:first-child a::before {
-    background:#1a8fe2;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-*/
