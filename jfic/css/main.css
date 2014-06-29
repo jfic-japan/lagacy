@@ -55,11 +55,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
@@ -69,58 +64,79 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-/*    border-bottom: 1px solid #bcbcbc;*/
-    margin: 0.5em 0 0.5em 0;
-}
-
-.header-container,
-.footer-container { 
-    background: white;
-/*    background: -webkit-linear-gradient(#fff 0%, #999 100%);
-*/
-}
-
 
 .title {
     color: white;
 }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
-/*
-nav ul {
+
+/**********************
+ JFIC Header and Footer
+***********************/
+
+.header-container,
+.footer-container { 
+    background: white;
+}
+
+.header-container {
+    padding: 0.5em 0 0.5em 0;
+}
+
+.header-container header {
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
+header.jfic-header img {
+    width: 25%;
+    max-width: 150px;
+    min-width: 70px;
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+header.jfic-header p.site-title{
+    display: inline;
+    vertical-align: bottom;
+    font-family: sans-serif;
+    color: #050642;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header.jfic-header p.site-title{
+        font-size: inherit;
+    }   
+}
+
+@media only screen and (min-width: 768px) {
+    header.jfic-header p.site-title{
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+}
+
+.footer-container{
+    border-top: 1px solid #bcbcbc;
     margin: 0;
     padding: 0;
 }
-*/
-/*
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
+.footer-container footer {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.2em;
+}
+.footer-container footer p {
     text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+    font-size: small;
+    color: #737373;
+    font-family: serif;
+    padding: 0;
+    margin: 0;
 }
-*/
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
+.footer-container footer p#askto {
+    margin: 0;
+    padding: 0;
+    font-size:small;    
 }
 
 /* ==============
@@ -131,27 +147,19 @@ nav a:hover {
     padding: 1em 0;
 }
 
-h1{
+.main h1{
     font-size: 1.5em;
     font-family: serif;
     border-left: 8px solid #555bb1;
     padding: 0.5em 0 3px 5px;
     border-bottom: 1px solid #555bb1;
 }
-.main aside h1{
-    font-size: 1.2em;
-    font-family: serif;
-    border-left: 4px solid #555bb1;
-    padding: 0.3em 0 1px 5px;
-    border-bottom: 1px solid #555bb1;
-}
-.main article h1:first-letter {
+.main h1:first-letter {
     font-size: 1.8em;
     font-family: serif;
     font-weight: bold;
 }
-
-h2 {
+.main h2 {
     font-size: 1em;
     font-family: serif;
     font-weight: bold;
@@ -170,35 +178,17 @@ h2 {
     padding-left: 1em;
 }
 
-.main aside {
-/*  padding: 0px 5% 10px;*/
-}
-
-.footer-container{
-    border-top: 1px solid #bcbcbc;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-container footer {
-    padding: 0;
-    margin: 0;
-    margin-top: 0.2em;
-}
-.footer-container footer p {
-    text-align: center;
-    font-size: x-small;
-    color: #737373;
+.main aside h1{
+    font-size: 1.2em;
     font-family: serif;
-    padding: 0;
-    margin: 0;
+    border-left: 4px solid #555bb1;
+    padding: 0.3em 0 1px 5px;
+    border-bottom: 1px solid #555bb1;
 }
-.footer-container footer p#askto {
-    margin: 0;
-    padding: 0;
-    font-size:x-small;    
+.main aside h1:first-letter{
+    font-size: 1.2em;
+    font-family: serif;
 }
-
 
 /* ===============
     ALL: IE Fixes
@@ -211,24 +201,6 @@ h2 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.header-container header {
-    max-width: 960px;
-    margin: 0 auto 0 auto;
-}
-header.jfic-header img {
-    width: 25%;
-    max-width: 150px;
-    min-width: 70px;
-    vertical-align: middle;
-    margin-left: 0.5em;
-}
-header.jfic-header p#site-title{
-    display: inline;
-    vertical-align: bottom;
-    font-family: sans-serif;
-    color: #050642;
-    padding: 0;
-}
 .top-image-container {
     max-width: 960px;
     margin: 0 auto 0 auto;
@@ -247,11 +219,6 @@ header.jfic-header p#site-title{
     #top-image img#PC_top {
         display: none;
     }
-    
-    header.jfic-header p#site-title{
-        font-size: inherit;
-    }
-    
 }
 
 @media only screen and (min-width: 768px) {
@@ -266,15 +233,8 @@ header.jfic-header p#site-title{
     }
     #top-image img#Mob_top {
         display: none;
-    }
-    header.jfic-header p#site-title{
-        font-size: 1.2em;
-        margin-left: 0.5em;
-    }
-
-    
+    }   
 }
-
 
 .items-container {
     max-width: 960px;
@@ -449,22 +409,14 @@ a.more {
     padding-bottom: 2%;
 }
 
-/*@media only screen and (min-width: 480px) {*/
+@media only screen and (min-width: 480px) {
+}
 @media only screen and (max-width: 768px) {
-
 }
-
 @media only screen and (min-width: 768px) {
-
-/*
-.main aside {
-     padding: 0px 5% 10px;
 }
-*/
-}
-/*
 @media only screen and (min-width: 1140px) {
-}*/
+}
 
 
 /* ==========================================================================
@@ -473,67 +425,9 @@ a.more {
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-/*
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-*/
-/*
-    nav a {
-        float: left;
-        width: 27%;
-    }
-*/
-
-/*
-    nav li:first-child a {
-        margin-left: 0;
-    }
-*/
-
-/*
-    nav li:last-child a {
-        margin-right: 0;
-    }
-*/
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-/*
-    nav ul li {
-        display: inline;
-    }
-*/
-/*
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-*/
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-/*
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0px 5px 10px #aaa;
-    }
-    */
 
 /* ============
     WIDE: Menu
@@ -542,12 +436,6 @@ a.more {
     .title {
         float: left;
     }
-/*
-    nav {
-        float: right;
-        width: 38%;
-    }
-*/
 
 /* ============
     WIDE: Main
