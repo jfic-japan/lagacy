@@ -76,30 +76,25 @@ body {
 
 .header-container,
 .footer-container { 
-    background: white;
+/*    background: white;*/
+    background: #d9d9d9;
 }
 
 .header-container {
     padding: 0.5em 0 0.5em 0;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 .header-container header {
     max-width: 960px;
     margin: 0 auto 0 auto;
 }
+
 header.jfic-header img {
-    width: 25%;
-    max-width: 150px;
-    min-width: 70px;
+    width: 50%;
+    max-width:  380px;
     vertical-align: middle;
     margin-left: 0.5em;
-}
-header.jfic-header p.site-title{
-    display: inline;
-    vertical-align: bottom;
-    font-family: sans-serif;
-    color: #050642;
-    padding: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -160,21 +155,10 @@ header.jfic-header p.site-title{
     font-weight: bold;
 }
 .main h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: serif;
     font-weight: bold;
-    background: -webkit-linear-gradient(#6673b4 0%, #bec8d4 100%);
-    background: -moz-linear-gradient(#6673b4 0%, #bec8d4 100%);
-    background: linear-gradient(#6673b4 0%, #bec8d4 100%);
-    
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-
-    box-shadow:rgba(255, 255, 255, 1) 0px 0px 6px 3px inset;
-    -webkit-box-shadow:rgba(255, 255, 255, 1) 0px 0px 6px 3px inset;
-    -moz-box-shadow:rgba(255, 255, 255, 1) 0px 0px 6px 3px inset;
-    padding: 0.5em;
+    border-bottom: 2px solid #555bb1;
     padding-left: 1em;
 }
 
@@ -290,7 +274,9 @@ nav.menu ul li.item_about_short {
 
 @media only screen and (max-width: 767px){
     nav.menu ul li.item_indoor,
+    nav.menu ul li.item_indoor_last,
     nav.menu ul li.item_menu, 
+    nav.menu ul li.item_menu_last, 
     nav.menu ul li.item_about,
     nav.menu ul li.item_half,
     nav.menu ul li.item_half_last {
@@ -299,7 +285,9 @@ nav.menu ul li.item_about_short {
 }
 @media only screen and (min-width: 768px){
     nav.menu ul li.item_indoor,
+    nav.menu ul li.item_indoor_last,
     nav.menu ul li.item_menu,
+    nav.menu ul li.item_menu_last,
     nav.menu ul li.item_about,
     nav.menu ul li.item_indoor,
     nav.menu ul li.item_half_last {
@@ -343,17 +331,21 @@ a.more {
 .about-photo-left img {
     display: block;
     float: left;
-    width: 55%;
+/*    width: 55%;*/
+    max-width: 55%;
     margin-right: 5%;
 }
 
 .about-photo-right img {
     display: block;
     float: right;
-    width: 55%;
+/*    width: 55%;*/
+    max-width: 55%;
     margin-left: 5%;
 }
-
+img#coat {
+    float: none; 
+}
 
 .SNS a {
     display: block;
