@@ -108,6 +108,10 @@ LAYOUT
 全体的なレイアウトについて記述する
 ******************************************/
 
+.l-margin__top {
+    margin: 1em 0 0 0;
+}
+
 .l-margin__bottom {
     margin: 0 0 1em 0;
 }
@@ -153,6 +157,7 @@ LAYOUT
 }
 
 .l-footer {
+    padding: 0.5em 0 0.5em 0;
 }
 
 
@@ -414,7 +419,8 @@ THEME
 .theme-***{}で記載する
 *****************************************/
 .theme-base {
-    background: #c6c6c6;
+/*    background: #c6c6c6;*/
+    background: #FFFFFF;
 }
 
 .theme-header-footer {
