@@ -137,6 +137,10 @@ LAYOUT
 .l-contents:after {
     clear: both; /*for clearfix*/
 }
+.l-contents__top {
+    width: 96%;
+    margin: 0 auto;   
+}
 .l-contents__main {
     float: left;
     width: 55%;
