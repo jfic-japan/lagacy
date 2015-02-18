@@ -128,7 +128,14 @@ LAYOUT
     width: 50%;
 }
 
+
 .l-breadcrumb {
+}
+@media screen and (max-width: 640px) {
+    .l-breadcrumb {
+        visibility: collapse;
+        margin-bottom: -1em;
+    }
 }
 
 .l-topimg {
@@ -280,6 +287,16 @@ MODULE
     font-size: 1.8em;
 }
 
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 0.75em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .heading {
+        font-size: 0.5em;
+    }
+}
 
 .heading2 {
     border-bottom: 2px solid #007AB7;
