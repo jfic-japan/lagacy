@@ -117,6 +117,15 @@ LAYOUT
 }
 
 .l-header {
+    padding: 0.2em 0 0.2em 0;
+}
+.l-header__item {
+}
+.l-header__item > a > img {
+    vertical-align: middle;
+    margin-left: 1em;
+    max-width:  380px;
+    width: 50%;
 }
 
 .l-breadcrumb {
@@ -156,13 +165,13 @@ LAYOUT
     margin-right: 3%;
 }
 
-.l-header {
-}
 
 .l-footer {
     padding: 0.5em 0 0.5em 0;
 }
-
+.l-footer__item {
+    vertical-align: middle;
+}
 
 .l-width {
     max-width: 960px;
