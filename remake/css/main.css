@@ -308,6 +308,18 @@ MODULE
     padding: 0 0 0.1em 0.5em;
 }
 
+@media screen and (max-width: 768px) {
+    .heading2 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .heading2 {
+        font-size: 1em;
+    }
+}
+
+
 
 .info-list {
     border-top: 2px solid #FFFFFF;
@@ -361,7 +373,7 @@ MODULE
 .media__img {
     float: left;
     margin-right: 1em;
-    width: 50%;
+    max-width: 50%;
 }
 .media__img > img {
     display: block;
