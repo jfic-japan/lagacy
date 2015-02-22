@@ -284,7 +284,7 @@ MODULE
     font-size: 0.5em;
 }
 .heading > *:first-letter { /* "> *"の代わりに、heading__content とクラスにしたほうがいいかもしれない   */
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
@@ -294,7 +294,7 @@ MODULE
 }
 @media screen and (max-width: 640px) {
     .heading {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 }
 
@@ -461,7 +461,7 @@ THEME
 *****************************************/
 .theme-base {
 /*    background: #c6c6c6;*/
-    background: #FFFFFF;
+    background: #C6EDDB;
 }
 
 .theme-header-footer {
