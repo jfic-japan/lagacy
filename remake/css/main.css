@@ -258,21 +258,20 @@ MODULE
     color: #ffffff;
     padding: 0.5em 0 0.5em 0;
 }
-.nav__item > a:active {
-    background: #707194;
-}
 .nav__item > a:hover {
     background: #72b9e2;
 }
-
+.nav__item > a:active {
+    background: #707194;
+}
 @media screen and (max-width: 768px) {
-    .nav__item{
-        font-size: 0.9em;
+    .nav__item {
+        font-size: 0.8em;
     }
 }
 @media screen and (max-width: 640px) {
-    .nav__item{
-        font-size: 0.75em;
+    .nav__item {
+        font-size: 0.7em;
     }
 }
 
@@ -472,8 +471,8 @@ THEME
 .theme-***{}で記載する
 *****************************************/
 .theme-base {
-    background: #c6c6c6;
-/*    background: #C6EDDB;*/
+/*    background: #c6c6c6;*/
+    background: #C6EDDB;
 }
 
 .theme-header-footer {

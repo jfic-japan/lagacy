@@ -108,46 +108,27 @@ LAYOUT
 全体的なレイアウトについて記述する
 ******************************************/
 
-.l-margin__top {
-    margin: 1em 0 0 0;
-}
-
-.l-margin__bottom {
-    margin: 0 0 1em 0;
-}
-
 .l-header {
-    padding: 0.2em 0 0.2em 0;
-}
-.l-header__item {
-}
-.l-header__item > a > img {
-    vertical-align: middle;
-    margin-left: 1em;
-    max-width:  380px;
-    width: 50%;
-}
-
-
-.l-breadcrumb {
-}
-@media screen and (max-width: 640px) {
-    .l-breadcrumb {
-        visibility: collapse;
-        margin-bottom: -1em;
-    }
+    border-bottom: 2px solid black;
+    background: #4a7878;
+    color: black;
 }
 
 .l-topimg {
+    margin: 0;
+    width: 50%;
 }
 .l-topimg > img {
+    text-align: center;
     width: 100%;
 }
 
 .l-menu {
+    width: 100%;
 }
 
 .l-contents {
+    width: 100%;
 }
 .l-contents:before,
 .l-contents:after {
@@ -157,41 +138,23 @@ LAYOUT
 .l-contents:after {
     clear: both; /*for clearfix*/
 }
-.l-contents__top {
-    width: 96%;
-    margin: 0 auto;   
-}
 .l-contents__main {
     float: left;
-    width: 55%;
-    margin-left: 3%;
+    width: 60%;
 }
 .l-contents__aside {
     float: right;
-    width: 35%;
-    margin-right: 3%;
+    width: 40%;
 }
-
 
 .l-footer {
-    padding: 0.5em 0 0.5em 0;
-}
-.l-footer__item {
-    vertical-align: middle;
+    border-top: 2px solid black;
 }
 
+/*ToDo サイズ分けが必要*/
 .l-width {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-    .l-contents__main,
-    .l-contents__aside {
-        float: none;
-        width: 96%;
-        margin: 0 auto;
-    }
+    width: 960px;
+    background: #6b6b6b; /*temp*/
 }
 
 
@@ -216,10 +179,12 @@ MODULE
 
 .box {
 }
-.box__main {
-}
-.box__aside {
-}
+    .box__main {
+    }
+    .box__aside {
+    }
+
+
 
 
 .breadcrumb {
@@ -240,6 +205,8 @@ MODULE
 }
 
 
+
+
 .nav {
     display: table;
     width: 100%;
@@ -258,23 +225,13 @@ MODULE
     color: #ffffff;
     padding: 0.5em 0 0.5em 0;
 }
-.nav__item > a:active {
-    background: #707194;
-}
 .nav__item > a:hover {
     background: #72b9e2;
 }
+.nav__item > a:active {
+    background: #707194;
+}
 
-@media screen and (max-width: 768px) {
-    .nav__item{
-        font-size: 0.9em;
-    }
-}
-@media screen and (max-width: 640px) {
-    .nav__item{
-        font-size: 0.75em;
-    }
-}
 
 
 
@@ -296,22 +253,14 @@ MODULE
     font-size: 0.5em;
 }
 .heading > *:first-letter { /* "> *"の代わりに、heading__content とクラスにしたほうがいいかもしれない   */
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
-@media screen and (max-width: 768px) {
-    .heading {
-        font-size: 0.75em;
-    }
-}
-@media screen and (max-width: 640px) {
-    .heading {
-        font-size: 0.7em;
-    }
-}
+
+
 
 .heading2 {
-    border-bottom: 2px solid #007AB7;
+    border-bottom: 3px solid #007AB7;
     font-family: serif;
     margin: 0.5em 0 0.5em 0;
 }
@@ -320,16 +269,6 @@ MODULE
     padding: 0 0 0.1em 0.5em;
 }
 
-@media screen and (max-width: 768px) {
-    .heading2 {
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 640px) {
-    .heading2 {
-        font-size: 1em;
-    }
-}
 
 
 
@@ -365,11 +304,16 @@ MODULE
     color: #2f2ff0;
 }
     
-   
+    
+    
+
+/*ToDo: 文字は右寄せになるが、リンクが横いっぱいになる。なぜか調べる*/
 .goto-more-detail {
     text-align: right;
     font-size: small;
 }
+
+
 
 
 .media {
@@ -385,7 +329,7 @@ MODULE
 .media__img {
     float: left;
     margin-right: 1em;
-    max-width: 50%;
+    width: 50%;
 }
 .media__img > img {
     display: block;
@@ -401,15 +345,15 @@ MODULE
 
 
 .logo {
-    margin: 0;
+    margin: 0px 0px 0px 5%;
     padding: 0;
 }
 .logo__item {
-    margin: 3% 0 3% 5%;
-    padding: 0;
+    margin: 0;
+    padding: 1em 0 0 0;
     display: inline-block;
     vertical-align: middle;
-    width: 40%;
+    width: 90%;
 }
 .logo__item > a {
     display: block;
@@ -419,29 +363,6 @@ MODULE
 }
 
 
-.sns {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.sns__item {
-    margin: 0 auto;
-    display: inline-block;
-}
-.sns__item > a {
-    display: block;
-    outline: 2px solid #b0b0b0;
-    text-decoration: none;
-    color: #000000;
- }
-.sns__item > a:hover{
-    outline: 3px solid #000000;
-    background: #ebebeb;
-}
-.sns__item > a > img {
-    width: 15%;
-    margin: 0.5em 0.5em 0.5em 0.5em;
-}
 
 .copyright {
     margin: 0;
@@ -473,7 +394,6 @@ THEME
 *****************************************/
 .theme-base {
     background: #c6c6c6;
-/*    background: #C6EDDB;*/
 }
 
 .theme-header-footer {
