@@ -5,75 +5,85 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>よくある質問</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style-contents.css">
-
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/vendor/jquery-1.10.1.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+
+    <body class="theme-base">
 
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header-container">
-            <header class="jfic-header">
+        <!-- Add your site or application content here -->
+
+        <div class="l-header theme-header-footer l-margin__bottom">
+            <header class="l-width l-header__item">
                 <a href="./index.html">
                     <img src="img/header/JFIC_title_header_twoline.png">
                 </a>
             </header>
         </div>
 
-        <div class="headline-container">
-            <div class="headline">
-                <h1 class="subpage-headline">FAQ</h1>
-                <nav class="breadcrumb-list clearfix">
-                    <ol id="breadcrumb-topics">
-                        <li><a href="./index.html">Home</a>&nbsp;&raquo;&nbsp;</li>                   
-                        <li>FAQ</li>
+        <div class="l-width">          
+
+            <div class="l-contents__top">
+                <div class="heading">
+                    <h2>FAQ</h2>
+                </div>
+
+                <div class="l-breadcrumb l-margin__bottom">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb__item">FAQ</li>
                     </ol>
-                </nav>
+                </div>
             </div>
-        </div>
+
+            <div class="l-topimg l-margin__bottom">
+                <img src="img/top/top_ball_valqua.png">
+            </div>
+
+            <div class="l-contents l-margin__bottom">
+                <div class="l-contents__top">
+                    
+                    <!-- ToDo -->
+
+                    Under Construction... <br>
+                    ご質問は<a href="query.html">「お問い合わせ」</a>から
+
+                </div> <!-- l-contents__top -->
+            </div> <!-- l-contents -->
+        </div> <!-- l-width -->
         
-        <div class="top-image-container">
-            <div id="top-image">
-                <img src="./img/top/top_ball_valqua.png" width="100%">
-            </div>
-        </div>
-
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-                <p>Under Construction...</p>
-                <p>ご質問は<a href="./query.html">「お問い合わせ」</a>から</p>
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer>
-                <p id="askto"><a href="./query.html">お問い合わせ</a></p>
-                <p>Copyright (c) 2014 Japan Federation of Indoor Cycling</p>
+        <div class="l-footer theme-header-footer">
+            <footer class="l-footer__item">
+                <p class="query"><a href="query.html">お問い合わせ</a></p>
+                <p class="copyright">Copyright (c) 2015 Japan Federation of Indoor Cycling</p>
             </footer>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
     </body>
 </html>

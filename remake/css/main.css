@@ -264,6 +264,17 @@ MODULE
 .nav__item > a:active {
     background: #707194;
 }
+@media screen and (max-width: 768px) {
+    .nav__item {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .nav__item {
+        font-size: 0.7em;
+    }
+}
+
 
 
 .heading {

@@ -1,11 +1,14 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-/******************************
-BASE
-クラスは基本的には定義しない
-*******************************/
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
 html,
 button,
@@ -15,10 +18,16 @@ textarea {
     color: #222;
 }
 
-body {
+html {
     font-size: 1em;
     line-height: 1.4;
 }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -30,6 +39,10 @@ body {
     text-shadow: none;
 }
 
+/*
+ * A better looking default horizontal rule
+ */
+
 hr {
     display: block;
     height: 1px;
@@ -39,9 +52,21 @@ hr {
     padding: 0;
 }
 
-img {
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
     vertical-align: middle;
 }
+
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
     border: 0;
@@ -49,28 +74,74 @@ fieldset {
     padding: 0;
 }
 
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
 textarea {
     resize: vertical;
 }
 
-.chromeframe {
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
 
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
+/*****************************************
+BASE
+個人のBASEについて記述する
+やたらと加えない
+******************************************/
 
 /*****************************************
 LAYOUT
 全体的なレイアウトについて記述する
 ******************************************/
 
+.l-margin__top {
+    margin: 1em 0 0 0;
+}
+
+.l-margin__bottom {
+    margin: 0 0 1em 0;
+}
+
+.l-header {
+    padding: 0.2em 0 0.2em 0;
+}
+.l-header__item {
+}
+.l-header__item > a > img {
+    vertical-align: middle;
+    margin-left: 1em;
+    max-width:  380px;
+    width: 50%;
+}
+
+
+.l-breadcrumb {
+}
+@media screen and (max-width: 640px) {
+    .l-breadcrumb {
+        visibility: collapse;
+        margin-bottom: -1em;
+    }
+}
+
 .l-topimg {
+}
+.l-topimg > img {
+    width: 100%;
 }
 
 .l-menu {
@@ -78,13 +149,51 @@ LAYOUT
 
 .l-contents {
 }
+.l-contents:before,
+.l-contents:after {
+    display: table; /*for clearfix*/
+    content: " "; /*for clearfix*/
+}
+.l-contents:after {
+    clear: both; /*for clearfix*/
+}
+.l-contents__top {
+    width: 96%;
+    margin: 0 auto;   
+}
+.l-contents__main {
+    float: left;
+    width: 55%;
+    margin-left: 3%;
+}
+.l-contents__aside {
+    float: right;
+    width: 35%;
+    margin-right: 3%;
+}
+
 
 .l-footer {
+    padding: 0.5em 0 0.5em 0;
 }
-.l-wrapper {
-    width: 90%;
-    margin: 0 5%;
+.l-footer__item {
+    vertical-align: middle;
 }
+
+.l-width {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .l-contents__main,
+    .l-contents__aside {
+        float: none;
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
 
 
 /******************************************
@@ -98,28 +207,87 @@ MODULE
     color: white;
 }
 
+
 .max-width {
     max-width: 960px;
     margin: 0 auto 0 auto;   
 }
 
+
 .box {
 }
-    .box__main {
+.box__main {
+}
+.box__aside {
+}
+
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+.breadcrumb__item {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb__item + .breadcrumb__item:before {
+    content: " » ";
+}
+.breadcrumb__item > a {
+    color: #333333;
+}
+
+
+.nav {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+.nav__item {
+    display: table-cell;
+}
+.nav__item > a {
+    display: block;
+    background: #007AB7;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5em 0 0.5em 0;
+}
+.nav__item > a:active {
+    background: #707194;
+}
+.nav__item > a:hover {
+    background: #72b9e2;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__item{
+        font-size: 0.9em;
     }
-    .box__aside {
+}
+@media screen and (max-width: 640px) {
+    .nav__item{
+        font-size: 0.75em;
     }
+}
+
+
 
 .heading {
-    border-left: 8px solid #B492CC;
-/*    padding: 0.5em 0 3px 5px;*/
-    border-bottom: 1px solid #B492CC;
-}
-.heading__font-serif {
+    border-left: 8px solid #007AB7;
+    border-bottom: 1px solid #007AB7;
+    border-top: 1px transparent;
     font-family: serif;   
-} 
-.heading__font-inherit {
-    font-family: inherit;
+    margin: 1em 0 1em 0;
+}
+.heading > * { /* "> *"の代わりに、heading__content とクラスにしたほうがいいかもしれない   */
+    margin: 0;
+    padding: 0.2em 0em 0.2em 0.3em;
 }
 .heading__large {
     font-size: 1.5em;
@@ -127,32 +295,167 @@ MODULE
 .heading__small {
     font-size: 0.5em;
 }
+.heading > *:first-letter { /* "> *"の代わりに、heading__content とクラスにしたほうがいいかもしれない   */
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 0.75em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .heading {
+        font-size: 0.7em;
+    }
+}
+
+.heading2 {
+    border-bottom: 2px solid #007AB7;
+    font-family: serif;
+    margin: 0.5em 0 0.5em 0;
+}
+.heading2 > * { /* "> *"の代わりに、heading__content とクラスにしたほうがいいかもしれない   */
+    margin: 0;
+    padding: 0 0 0.1em 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .heading2 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .heading2 {
+        font-size: 1em;
+    }
+}
+
+
 
 .info-list {
+    border-top: 2px solid #FFFFFF;
 }
-    .info-list__date {
-    }
-    .info-list__title {
-    }
+.info-list__item {
+    padding : 0;
+    margin: 0;
+    border-bottom: 3px solid #a8a8a8;
+}
+.info-list__item > a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 0 0.5em 0;
+}
+.info-list__item > a:active {
+    background: #838383;
+}
+.info-list__item__date {
+    color: #777;
+    font-size: 0.8em;
+    margin: 0 0.5em 0.2em 0.5em;
+}
+.info-list__item__title {
+    margin: 0 1em 0 1em;
+    color: #2f2ff0;
+    font-weight: bold;
+    font-size: 1em;
+}
+.info-list__item + .info-list__item {
+    border-top: 2px solid #FFFFFF;
+    color: #2f2ff0;
+}
     
+   
 .goto-more-detail {
+    text-align: right;
+    font-size: small;
 }
+
 
 .media {
 }
-    .media__img {
-    }
-    .media__img--reverse {
-    }
-    .media__body {
-    }
-
-.thirdparty-logo {
+.media:before,
+.media:after {
+    display: table; /*for clearfix*/
+    content: " "; /*for clearfix*/
 }
-    .thirdparty-logo__link {
-    }
+.media:after {
+    clear: both; /*for clearfix*/
+}
+.media__img {
+    float: left;
+    margin-right: 1em;
+    max-width: 50%;
+}
+.media__img > img {
+    display: block;
+    width: 100%;
+}
+.media__img--rev {
+    float: right;
+    margin-left: 1em;
+}
+.media__body {
+    /*overflow: hidden;*/ /*画像の下への文章回り込みを禁止*/
+}
+
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+.logo__item {
+    margin: 3% 0 3% 5%;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+.logo__item > a {
+    display: block;
+}
+.logo__item > a > img {
+    max-width: 100%;
+}
+
+
+.sns {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.sns__item {
+    margin: 0 auto;
+    display: inline-block;
+}
+.sns__item > a {
+    display: block;
+    outline: 2px solid #b0b0b0;
+    text-decoration: none;
+    color: #000000;
+ }
+.sns__item > a:hover{
+    outline: 3px solid #000000;
+    background: #ebebeb;
+}
+.sns__item > a > img {
+    width: 15%;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
 
 .copyright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: small;
+    color: #737373;
+    font-family: serif;   
+}
+.query {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    text-align: center;
 }
 
 /*****************************************
@@ -168,407 +471,44 @@ THEME
 スキン的な全体的なテーマについて記述する
 .theme-***{}で記載する
 *****************************************/
-.theme-gray {
+.theme-base {
+    background: #c6c6c6;
+/*    background: #C6EDDB;*/
+}
+
+.theme-header-footer {
     background: #d9d9d9;
 }
 
 
 
 
-/**********************
- JFIC Header and Footer
-***********************/
-
-.header-container,
-.footer-container { 
-/*    background: white;*/
-    background: #d9d9d9;
-}
-
-.header-container {
-    padding: 0.5em 0 0.5em 0;
-    border-bottom: 1px solid #aaaaaa;
-}
-
-.header-container header {
-    max-width: 960px;
-    margin: 0 auto 0 auto;
-}
-
-header.jfic-header img {
-    width: 50%;
-    max-width:  380px;
-    vertical-align: middle;
-    margin-left: 0.5em;
-}
-
-@media only screen and (max-width: 768px) {
-    header.jfic-header p.site-title{
-        font-size: inherit;
-    }   
-}
-
-@media only screen and (min-width: 768px) {
-    header.jfic-header p.site-title{
-        font-size: 1.5em;
-        margin-left: 0.5em;
-    }
-}
-
-.footer-container{
-    border-top: 1px solid #bcbcbc;
-    margin: 0;
-    padding: 0;
-}
-.footer-container footer {
-    padding: 0;
-    margin: 0;
-    margin-top: 0.2em;
-}
-.footer-container footer p {
-    text-align: center;
-    font-size: small;
-    color: #737373;
-    font-family: serif;
-    padding: 0;
-    margin: 0;
-}
-.footer-container footer p#askto {
-    margin: 0;
-    padding: 0;
-    font-size:small;    
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 1em 0;
-}
-
-.main h1{
-    font-size: 1.5em;
-    font-family: serif;
-    border-left: 8px solid #555bb1;
-    padding: 0.5em 0 3px 5px;
-    border-bottom: 1px solid #555bb1;
-}
-.main h1:first-letter {
-    font-size: 1.8em;
-    font-family: serif;
-    font-weight: bold;
-}
-.main h2 {
-    font-size: 1.2em;
-    font-family: serif;
-    font-weight: bold;
-    border-bottom: 2px solid #555bb1;
-    padding-left: 1em;
-}
-
-.main aside h1{
-    font-size: 1.2em;
-    font-family: serif;
-    border-left: 4px solid #555bb1;
-    padding: 0.3em 0 1px 5px;
-    border-bottom: 1px solid #555bb1;
-}
-.main aside h1:first-letter{
-    font-size: 1.2em;
-    font-family: serif;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-.top-image-container {
-    max-width: 960px;
-    margin: 0 auto 0 auto;
-}
-
-@media only screen and (max-width: 768px) {
-    #top-image img#Mob_top {
-        max-width: 100%;
-        -webkit-box-shadow: 0 5px 10px #aaa;
-        -moz-box-shadow: 0 5px 10px #aaa;
-        box-shadow: 0px 5px 10px #aaa;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #top-image img#PC_top {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #top-image img#PC_top {
-        max-width: 100%;
-        -webkit-box-shadow: 0 5px 10px #aaa;
-        -moz-box-shadow: 0 5px 10px #aaa;
-        box-shadow: 0px 5px 10px #aaa;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #top-image img#Mob_top {
-        display: none;
-    }   
-}
-
-.items-container {
-    max-width: 960px;
-    margin: 0 auto 0 auto;
-}
-
-/** menu bar customize **/
-nav.menu {
-    margin: 0.5em auto 0 auto;
-}
-
-nav.menu ul {
-    padding: 0;
-    margin: 0 auto;
-    background: white;
-
-}
-
-nav.menu a {
-    display: block;
-    text-align: center;
-    font-family: sans-serif;
-    color: white;
-    padding: 0.5em 0 0.5em 0;
-    margin: 0 0 1px 0;
-    background: #1473c4;
-    text-decoration: none;
-}
-nav.menu a:hover{
-    background: #72b9e2;
-}
-nav.menu a:active{
-    background: #7e8096;
-}
-
-nav.menu ul li.item_indoor,
-nav.menu ul li.item_half {
-    margin: 0 auto;
-    float: left;
-    width: 50%;
-}
-nav.menu ul li.item_menu {
-    margin: 0 auto;
-    float: left;
-    width: 20%;
-}
-nav.menu ul li.item_about_short {
-    margin: 0 auto;
-    float: left;
-    width: 20%;
-}
 
 
-@media only screen and (max-width: 767px){
-    nav.menu ul li.item_indoor,
-    nav.menu ul li.item_indoor_last,
-    nav.menu ul li.item_menu, 
-    nav.menu ul li.item_menu_last, 
-    nav.menu ul li.item_about,
-    nav.menu ul li.item_half,
-    nav.menu ul li.item_half_last {
-        font-size: smaller;
-    }
-}
-@media only screen and (min-width: 768px){
-    nav.menu ul li.item_indoor,
-    nav.menu ul li.item_indoor_last,
-    nav.menu ul li.item_menu,
-    nav.menu ul li.item_menu_last,
-    nav.menu ul li.item_about,
-    nav.menu ul li.item_indoor,
-    nav.menu ul li.item_half_last {
-        font-size: middle;
-    }   
-    nav.menu ul li.item_about_short {    
-        width:25%;
-    }
-}
-
-dl.information-link dt {
-    margin: 0;
-    padding: 0;
-    color: #777;
-    width: 98%;
-    margin: 0 auto 0 auto;
-    font-size: 0.8em;
-    border-top: 1px solid #ccc;
-}
-
-dl.information-link dd {
-    margin: 0 2% 0 2%;
-    color: #2f2ff0;
-    font-weight: bold;
-}
-
-dl.information-link a {
-    text-decoration: none;
-    display: block;
-}
-dl.information-link a:active {
-    background: #bfbfbf;    
-}
-
-a.more {
-    display: block;
-    text-align: right;
-    font-size: small;
-}
-
-.about-photo-left img {
-    display: block;
-    float: left;
-/*    width: 55%;*/
-    max-width: 55%;
-    margin-right: 5%;
-}
-
-.about-photo-right img {
-    display: block;
-    float: right;
-/*    width: 55%;*/
-    max-width: 55%;
-    margin-left: 5%;
-}
-img#coat {
-    float: none; 
-}
-
-.SNS a {
-    display: block;
-    border: 2px solid #b0b0b0;
-    width: 70%;
-    margin: 0 auto 0 auto;
-    text-decoration: none;
-    color: inherit;
-}
-
-.SNS a:hover {
-    border: 2px solid #424242;
-}
-
-.sns-item {
-    width: 100%;
-    margin: 0 auto 0 auto;
-}
-
-.sns-item img {
-    width: 15%;
-    vertical-align: middle;
-    margin: 2% 0 2% 5%;
-}
-
-.sns-item p {
-    width: 75%;
-    display: inline;
-    vertical-align: middle;
-    margin: 0 0 0 5%;
-    font-family: sans-serif;
-}
-
-.sponsor-partner {
-    width: 100%;
-}
-.sponsor-partner .bnr ul {
-    margin: 0 5% 0 5%;
-    width: 90%;
-    padding: 0;
-}
-.bnr img{
-    max-width: 40%;
-    margin: 1% 0 3% 0;
-    vertical-align: middle;
-}
-.bnr li {
-    display: inline;
-    margin-left: 6%;
-    margin-top: 2%; 
-    margin-bottom: 10%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-@media only screen and (min-width: 480px) {
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 1140px) {
-}
 
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
 
-@media only screen and (min-width: 480px) {
 
-}
 
-@media only screen and (min-width: 768px) {
 
-/* ============
-    WIDE: Menu
-   ============ */
 
-    .title {
-        float: left;
-    }
 
-/* ============
-    WIDE: Main
-   ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
-    }
 
-    .main aside {
-        float: right;
-        width: 40%;
-    }
-}
-
-@media only screen and (min-width: 960px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 864px; /* 960px - 10% for margins*/
-        margin: 0 auto;
-    }
-}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Image replacement
+ */
+
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
+    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -579,10 +519,18 @@ img#coat {
     height: 150%;
 }
 
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
 .hidden {
     display: none !important;
     visibility: hidden;
 }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
 
 .visuallyhidden {
     border: 0;
@@ -595,6 +543,11 @@ img#coat {
     width: 1px;
 }
 
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -605,26 +558,65 @@ img#coat {
     width: auto;
 }
 
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
 .invisible {
     visibility: hidden;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
 .clearfix {
     *zoom: 1;
 }
 
 /* ==========================================================================
-   Print styles
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
 @media print {
