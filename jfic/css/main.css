@@ -259,9 +259,6 @@ MODULE
     padding: 0.5em 0 0.5em 0;
 }
 .nav__item > a:active {
-    background: #707194;
-}
-.nav__item > a:hover {
     background: #72b9e2;
 }
 
