@@ -2,6 +2,3 @@
 
 /jfic
  For web server of JFIC.
-
-/draft
- For draft. Don't upload to the server.
