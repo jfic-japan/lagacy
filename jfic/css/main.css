@@ -469,8 +469,7 @@ THEME
 .theme-***{}で記載する
 *****************************************/
 .theme-base {
-    background: #c6c6c6;
-/*    background: #C6EDDB;*/
+    background: #FFFFFF;
 }
 
 .theme-header-footer {
