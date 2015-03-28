@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
 
     <body class="theme-base">
@@ -53,34 +54,7 @@
                         <h2>Topics</h2>
                     </div>
 
-                    <dl class="info-list">
-
-                        <div class="info-list__item">
-                            <a href="./topics/2015031201.html">
-                                <dt class="info-list__item__date">2015年3月12日</dt>
-                                <dd class="info-list__item__title">テストサイトを開設しました</dd>                   
-                            </a>
-                        </div>
-
-                        <!--
-                        <div class="info-list__item">
-                            <a href="XXXXXX">            
-                                <dt class="info-list__item__date">2015年X月XX日</dt>
-                                <dd class="info-list__item__title">XXXXXリストのタイトルXXXXXX</dd>                   
-                            </a>
-                        </div>
-                         -->
-
-                        <!-- 
-                        <div class="info-list__item">
-                            <a href="XXXXXX">            
-                                <dt class="info-list__item__date">2015年X月XX日</dt>
-                                <dd class="info-list__item__title">XXXXXリストのタイトルXXXXXX</dd>                   
-                            </a>
-                        </div>
-                        -->
-
-                    </dl>
+                    <dl class="info-list" id ="topics-subject"></dl>
                     
                     <div class="goto-more-detail">
                         <a href="topics.html">&nbsp;&raquo;&nbsp;Topics一覧</a>
@@ -174,6 +148,41 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
+        <script>
+         $(function () {
+             $.getJSON("./topics/data/topics-subject.json", function(data) {
+
+                 var item_num = 3;
+
+                 if (data.topics.length < item_num) {
+                     item_num = data.topics.length;
+                     
+                 }
+
+                 for (i = 0; i < item_num; i++){
+
+                     $('<div class="info-list__item">' +
+                       '<a href="./topics/' + data.topics[i].date + '.html">' + 
+                       '<dt class="info-list__item__date">' + 
+                       parseInt(data.topics[i].date.toString().substr(0,4)) + '年' +
+                       parseInt(data.topics[i].date.toString().substr(4,2)) + '月' +
+                       parseInt(data.topics[i].date.toString().substr(6,2)) + '日' +
+                       '</dt>' + 
+                       '<dd class="info-list__item__title">' + 
+                       data.topics[i].title + 
+                       '</dd></a></div>').appendTo("#topics-subject");
+
+                     if (data.topics[i].category != null) {
+                         //TODO:新着情報等のタグ付け
+                     }
+                 }
+
+             });
+         });
+        </script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
