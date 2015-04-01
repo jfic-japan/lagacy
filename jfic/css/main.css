@@ -357,10 +357,6 @@ MODULE
     font-weight: bold;
     font-size: 1em;
 }
-.info-list__item + .info-list__item {
-    color: #2f2ff0;
-}
-    
    
 .goto-more-detail {
     text-align: right;
