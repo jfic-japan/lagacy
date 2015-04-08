@@ -332,6 +332,10 @@ MODULE
 
 .info-list {
     border-top: 2px solid #FFFFFF;
+    list-style-type: none;
+    padding: 0;
+
+
 }
 .info-list__item {
     padding : 0;
@@ -356,6 +360,14 @@ MODULE
     color: #2f2ff0;
     font-weight: bold;
     font-size: 1em;
+}
+.info-list__item__place:before {
+    content: "試合会場："
+}
+.info-list__item__place {
+    margin: 0 1em 0 2em;
+    color: #000000;
+    font-size: 0.8em;
 }
    
 .goto-more-detail {
