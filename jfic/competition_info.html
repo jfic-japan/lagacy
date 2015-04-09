@@ -55,16 +55,17 @@
             <div class="l-contents l-margin__bottom">
                 <div class="l-contents__top">
                     
-                    <!-- ToDo -->
-                    <ul class="info-list">
-                        <div class="info-list__item">                        
+                    <ul class="info-list" id="competition-subject"></ul>
+
+<!--
+                        <div class="info-list__item">
                             <a href="#">                           
                                 <li class="info-list__item__date">2015年7月4日(土)</li>
                                 <li class="info-list__item__title">2015年度世界選手権派遣選手決定戦</li>
                                 <li class="info-list__item__place">Bumb東京</li>
                             </a>
                         </div>
-                    </ul>
+-->
 
                 </div> <!-- l-contents__top -->
             </div> <!-- l-contents -->
@@ -81,6 +82,45 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
+        <script>
+         $(function () {
+             $.getJSON("./competition/data/competition-subject.json", function(data) {
+
+                 var item_num = 100;
+
+                 if (data.competition.length < item_num) {
+                     item_num = data.competition.length;   
+                 }
+
+                 for (i = 0; i < item_num; i++){
+
+                     $('<div class="info-list__item">' +
+                       '<a href="./competition/' + 
+                       data.competition[i].year + 
+                       '/' +
+                       data.competition[i].link + 
+                       '.html">' +
+                       '<li class="info-list__item__date">' + 
+                       data.competition[i].date +
+                       '</li>' + 
+                       '<li class="info-list__item__title">' + 
+                       data.competition[i].title + 
+                       '</li>' + 
+                       '<li class="info-list__item__place">' + 
+                       data.competition[i].place +
+                       '</li>' + 
+                       '</a></div>').appendTo("#competition-subject");
+
+                     //TODO:国際試合か国内試合かのタグ付け
+
+                 }
+             });
+         });
+        </script>
+
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
