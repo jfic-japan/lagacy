@@ -157,16 +157,27 @@
              $.getJSON("./topics/data/topics-subject.json", function(data) {
 
                  var item_num = 3;
+                 var link;
 
                  if (data.topics.length < item_num) {
                      item_num = data.topics.length;
                      
                  }
 
+
+
                  for (i = 0; i < item_num; i++){
+                     if (data.topics[i].link != null)
+                     {
+                         link = data.topics[i].link;
+                     }
+                     else 
+                     {
+                         link = data.topics[i].date;
+                     }
 
                      $('<div class="info-list__item">' +
-                       '<a href="./topics/' + data.topics[i].date + '.html">' + 
+                       '<a href="./topics/' + link + '.html">' + 
                        '<dt class="info-list__item__date">' + 
                        parseInt(data.topics[i].date.toString().substr(0,4)) + '年' +
                        parseInt(data.topics[i].date.toString().substr(4,2)) + '月' +
