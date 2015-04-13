@@ -207,6 +207,15 @@ MODULE
     color: white;
 }
 
+.top-custom-img {
+    width: 100%;
+    height: 0;
+    padding-top:47.85%;/* (490 / 1024) * 100 */
+    background-image:url("../img/top/corner_valqua_20140719_withJFIC.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
 
 .max-width {
     max-width: 960px;
@@ -220,7 +229,6 @@ MODULE
 }
 .box__aside {
 }
-
 
 .breadcrumb {
     margin: 0;
