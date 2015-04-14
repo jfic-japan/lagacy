@@ -4,18 +4,18 @@
         {
             "year":"2015",
             "date":"2015年7月4日(土)",
-            "title":"ＵＣＩサイクルサッカーワールドカップ第３戦（アジア大会）",
-            "class":"international",
-            "place":"Bumb東京",
-            "link":"2015uci-wc-3rd"
-        },
-        {
-            "year":"2015",
-            "date":"2015年7月4日(土)または7月5日(日)",
             "title":"２０１５年度世界選手権派遣選手決定戦",
             "class":"domestic",
             "place":"Bumb東京",
             "link":"2015championship-for-wm"
+        },
+        {
+            "year":"2015",
+            "date":"2015年7月5日(日)",
+            "title":"ＵＣＩサイクルサッカーワールドカップ第３戦（アジア大会）",
+            "class":"international",
+            "place":"Bumb東京",
+            "link":"2015uci-wc-3rd"
         },
         {
             "year":"2015",
