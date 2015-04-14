@@ -14,6 +14,13 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <!-- デバイスサイズ640px以下 -->
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:640px)" href="css/topics-top-img_mobile.css">
+ 
+        <!-- デバイスサイズ641px以上 -->
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width:641px)" href="css/topics-top-img.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
@@ -48,8 +55,7 @@
                 </div>
             </div>
 
-            <div class="l-topimg">
-                <img src="img/top/top_ball_figure.png">
+            <div class="l-topimg top-custom-img">
             </div>
 
             <div class="l-contents l-margin__bottom">
