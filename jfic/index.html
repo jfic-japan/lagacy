@@ -27,6 +27,24 @@
 
     <body class="theme-base">
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1590682037878658',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/ja_JP/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,9 +53,26 @@
 
         <div class="l-width">
 
-            <div class="l-topimg l-margin__bottom">
+            <div class="l-topimg">
                 <div class="top-custom-img"></div>
             </div>
+
+
+            <ul class="l-sns-button">
+                <li class="l-sns-button__item" style="width:95px">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.jfic-japan.com" data-text="日本室内自転車競技連盟" data-hashtags="JFIC">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </li>
+                <li class="l-sns-button__item">
+                    <div 
+                    class="fb-like"
+                    data-share="true"
+                    data-width="450"
+                    data-layout="button_count"
+                    data-show-faces="false">
+                    </div>
+                </li>
+            </ul>
+
 
             <div class="l-menu l-margin__bottom">
                 <ul class="nav">
@@ -143,6 +178,24 @@
                         <li class="logo__item"><a href="http://www.valqua.co.jp"><img src="img/sponsor/valqua.jpg" alt="日本バルカー工業株式会社"></a></li>
                     </ul>                                    
                 </div> <!-- l-contents__aside -->
+
+                <ul class="l-sns-button l-sns-button--left">
+                    <li class="l-sns-button__item" style="width:95px">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.jfic-japan.com" data-text="日本室内自転車競技連盟" data-hashtags="JFIC">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li>
+                    <li class="l-sns-button__item">
+                        <div 
+                    class="fb-like"
+                    data-share="true"
+                    data-width="450"
+                    data-layout="button_count"
+                    data-show-faces="false">
+                        </div>
+                    </li>
+                </ul>
+
+
+
 
             </div><!-- l-contents -->
         </div> <!-- l-width -->
