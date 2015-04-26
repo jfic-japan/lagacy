@@ -479,6 +479,23 @@ MODULE
     text-align: center;
 }
 
+.map {
+    position: relative;
+    padding-bottom: 65%;
+    height: 0;
+    overflow: hidden;   
+}
+
+.map__item--google {
+
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90% !important;
+    height: 90% !important;
+}
+
+
 /*****************************************
 STATE
 コンポーネントの状態によって、
