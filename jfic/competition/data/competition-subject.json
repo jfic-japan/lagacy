@@ -3,6 +3,14 @@
     [
         {
             "year":"2015",
+            "date":"2015年5月17日(日)",
+            "title":"５月杯（関西）",
+            "class":"domestic",
+            "place":"関西大学",
+            "link":"maycup_kansai_0517"
+        },
+        {
+            "year":"2015",
             "date":"2015年7月4日(土)",
             "title":"２０１５年度世界選手権派遣選手決定戦",
             "class":"domestic",
