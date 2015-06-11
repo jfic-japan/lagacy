@@ -2,9 +2,16 @@
     "topics":
     [
         {
+            "date":201506110940,
+            "link":"../competition_info",
+            "title":"チャンピオンズカップの大会情報を更新しました。",
+            "category":null
+        },
+
+        {
             "date":201506010655,
             "link":"../competition_info",
-            "title":"Hong Kong Open 2015 の大会情報を掲載しました。参加者募集中です。",
+            "title":"Hong Kong Open 2015 の大会情報を掲載しました。(6/5エントリー終了)",
             "category":null
         },
 
