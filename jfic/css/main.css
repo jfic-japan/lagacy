@@ -500,6 +500,10 @@ MODULE
     width: 40%;
     float: left;
 }
+.box-left--even {
+    width: 50%;
+    float: left;
+}
 .box-left__ranking {
     margin-left: 1em;
     margin-right: 1em;
@@ -515,6 +519,30 @@ MODULE
     float: right;
     text-align:center;
 }
+.box-right--even {
+    width: 50%;
+    float: right;
+}
+.box-right__ranking {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0;
+    list-style-type: none;
+}
+.box-right__paragraph {
+    text-align: left;
+    padding:0.5em;
+}
+.box-right__img {
+    padding:0.5em;
+    width: 100%;
+}
+.box-right__img > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
 .box-clear {
     clear: both;
 }
@@ -526,6 +554,18 @@ MODULE
         width: 96%;
         margin: 0 auto;
     }
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /*315:560*/
+}
+.video > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
