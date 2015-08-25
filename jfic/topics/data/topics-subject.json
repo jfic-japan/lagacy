@@ -1,20 +1,20 @@
 {
     "topics":
     [
+    
+       {
+            "date":20150826,
+            "link":"../competition/2015/2015japancup",
+            "title":"２０１５年度ジャパンカップの来日予定選手および開催日時・会場情報を掲載しました。",
+            "category":null
+        },
+    
        {
             "date":20150824,
             "link":"../competition/2015/2015asian-championship",
             "title":"第１３回アジア室内自転車競技選手権大会の大会結果を掲載しました。",
             "category":null
         },
-    
-        {
-            "date":201508242300,
-            "link":null,
-            "title":"近藤菜月選手がTBS「あさチャン」に出演します！",
-            "category":null
-        },
-
     
         {
             "date":20150820,
