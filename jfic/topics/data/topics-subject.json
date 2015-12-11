@@ -1,6 +1,12 @@
 {
     "topics":
     [
+        {
+             "date":201512111059,
+             "link":null,
+             "title":"12/14(月) 滋賀ブルーレイクエンジェルの活躍が紹介されます！",
+             "category":null
+         },
 
        {
             "date":20151203,
@@ -19,7 +25,7 @@
              "link":"../competition_info",
              "title":"2015 UCI 世界選手権の出場選手と日本代表競技予定を掲載しました。Youtubeでストリーミングもされますので是非ご視聴ください！",
              "category":null
-         },            
+         },
         {
             "date":20151110,
             "link":"../competition_info",
