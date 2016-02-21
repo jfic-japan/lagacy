@@ -2,6 +2,12 @@
     "topics":
     [
         {
+             "date":20160220,
+             "link":"../competition_info_2016",
+             "title":"２０１６年度の大会情報を追加しました。",
+             "category":null
+         },
+        {
              "date":201512222355,
              "link":null,
              "title":"UCI Regulation の更新が発表されました。",

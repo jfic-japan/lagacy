@@ -190,6 +190,18 @@ LAYOUT
     width: 35%;
     margin-right: 3%;
 }
+.l-contents__main--reverse {
+    float: right;
+    width: 65%;
+    margin-right: 3%;
+}
+.l-contents__aside--reverse {
+    float: left;
+    width: 25%;
+    margin-left: 3%;
+}
+
+
 
 
 .l-footer {
@@ -206,7 +218,9 @@ LAYOUT
 
 @media screen and (max-width: 768px) {
     .l-contents__main,
-    .l-contents__aside {
+    .l-contents__aside,
+    .l-contents__main--reverse,
+    .l-contents__aside--reverse {
         float: none;
         width: 96%;
         margin: 0 auto;
