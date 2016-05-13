@@ -1,6 +1,22 @@
 {
     "competition":
     [
+      {
+            "year":"2016",
+            "date":"2016年5月14日(土)",
+            "title":"関東春季学生リーグ",
+            "class":"domestic",
+            "place":"東京工業大学",
+            "link":"kanto_student_championship_spring_20160514"
+        },
+        {
+            "year":"2016",
+            "date":"2016年5月15日(日)",
+            "title":"関東春季社会人リーグ",
+            "class":"domestic",
+            "place":"東京工業大学",
+            "link":"kanto_championship_spring_20160515"
+        },
         {
             "year":"2016",
             "date":"2016年7月9日(土)",
