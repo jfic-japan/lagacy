@@ -22,15 +22,23 @@
             "date":"2016年7月9日(土)",
             "title":"２０１６チャンピオンズカップ（世界選手権派遣選手決定戦）",
             "class":"domestic",
-            "place":"大阪（会場未定）",
+            "place":"大阪（桃山学院大学）",
             "link":"2016champions-cup"
         },
         {
             "year":"2016",
+            "date":"2016年7月10日(日)",
+            "title":"2016 UCI サイクルサッカーワールドカップ　第3戦",
+            "class":"international",
+            "place":"大阪（桃山学院大学）",
+            "link":"2016world-cup-asia"
+        },
+		{
+            "year":"2016",
             "date":"2016年8月6日(土)",
             "title":"第１４回アジア室内自転車競技選手権大会",
             "class":"international",
-            "place":"香港（会場未定）",
+            "place":"香港（Hong Kong Velodrome）",
             "link":"2016asian-championship"
         },
         {
@@ -38,7 +46,7 @@
             "date":"2016年8月7日(日)",
             "title":"Hong Kong Open 2016",
             "class":"international",
-            "place":"香港（会場未定）",
+            "place":"香港（Hong Kong Velodrome）",
             "link":"HK_open_2016"
         },
         {
@@ -46,7 +54,7 @@
             "date":"2016年9月17日(土) - 9月18日(日)",
             "title":"ジャパンカップ（ドイツＵ−１９交流大会）",
             "class":"international",
-            "place":"大阪（会場未定）",
+            "place":"大阪（梅田地区）",
             "link":"2016japancup"
         },
         {
@@ -70,7 +78,7 @@
             "date":"2016年11月12日(土)",
             "title":"UCI Cycle-Ball World Cup Final",
             "class":"international",
-            "place":"未定",
+            "place":"スイス・ヴィンタートゥール（会場未定）",
             "link":"2016_CBWCF"
         },
         {
@@ -86,7 +94,7 @@
             "date":"2016年12月2日(金) - 12月4日(日)",
             "title":"UCI Indoor Cycling World Championships 2016",
             "class":"international",
-            "place":"ドイツ・シュツットガルト（会場未定）",
+            "place":"ドイツ・シュツットガルト（PORSCHE-arena）",
             "link":"2016_WCH"
         },
         {
