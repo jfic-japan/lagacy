@@ -2,6 +2,24 @@
     "topics":
     [
         {
+             "date":201606170000,
+             "link":null,
+             "title":"UCI Cycle Ball world Cup Osaka 2016",
+             "category":null
+         },        
+        {
+             "date":20160613,
+             "link":"../competition_info_2016",
+             "title":"香港チームとの交流試合（関西）結果を掲載しました。",
+             "category":null
+         },        
+        {
+             "date":20160609,
+             "link":"../competition_info_2016",
+             "title":"香港チームとの交流試合（関西）について情報掲載しました。",
+             "category":null
+         },        
+        {
              "date":20160603,
              "link":"../competition_info_2016",
              "title":"関東春季学生リーグ、社会人リーグの大会結果を掲載しました。",
