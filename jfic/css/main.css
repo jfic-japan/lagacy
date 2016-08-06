@@ -178,7 +178,7 @@ LAYOUT
 }
 .l-contents__top {
     width: 96%;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 .l-contents__main {
     float: left;
@@ -242,7 +242,7 @@ MODULE
 
 .max-width {
     max-width: 960px;
-    margin: 0 auto 0 auto;   
+    margin: 0 auto 0 auto;
 }
 
 
@@ -283,7 +283,7 @@ MODULE
 }
 .nav__item > a {
     display: block;
-    background: #007AB7;
+    background: #072551;
     text-decoration: none;
     text-align: center;
     color: #ffffff;
@@ -307,10 +307,10 @@ MODULE
 
 
 .heading {
-    border-left: 8px solid #007AB7;
-    border-bottom: 1px solid #007AB7;
+    border-left: 8px solid #072551;
+    border-bottom: 1px solid #072551;
     border-top: 1px transparent;
-    font-family: serif;   
+    font-family: serif;
     margin: 1em 0 1em 0;
 }
 .heading > * { /* "> *"の代わりに、heading__content とクラスにしたほうがいいかもしれない   */
@@ -400,7 +400,7 @@ MODULE
     color: #000000;
     font-size: 0.8em;
 }
-   
+
 .goto-more-detail {
     text-align: right;
     font-size: small;
@@ -484,7 +484,7 @@ MODULE
     text-align: center;
     font-size: small;
     color: #737373;
-    font-family: serif;   
+    font-family: serif;
 }
 .query {
     margin: 0;
@@ -497,7 +497,7 @@ MODULE
     position: relative;
     padding-bottom: 65%;
     height: 0;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .map__item--google {
