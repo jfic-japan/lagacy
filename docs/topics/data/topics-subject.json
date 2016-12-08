@@ -2,6 +2,30 @@
     "topics":
     [
         {
+             "date":20161128,
+             "link":"../competition/2016/2016_WCH",
+             "title":"2016世界選手権派遣選手情報を掲載しました。",
+             "category":null
+         },
+        {
+             "date":20161118,
+             "link":"../competition/2016/2016japan-championship",
+             "title":"第47回全日本選手権の実施要項PDFを掲載しました。",
+             "category":null
+         },
+        {
+             "date":20160920,
+             "link":"../competition/2016/2016japancup",
+             "title":"2016年度ジャパンカップの大会結果PDFを掲載しました。",
+             "category":null
+         },
+        {
+             "date":20160913,
+             "link":"../competition/2016/2016japancup",
+             "title":"2016年度ジャパンカップ試合スケジュールを更新しました。",
+             "category":null
+         },
+        {
              "date":20160823,
              "link":"../competition/2016/2016japancup",
              "title":"2016年度ジャパンカップ実施要項・試合スケジュール案を掲載しました。",
