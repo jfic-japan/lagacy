@@ -60,9 +60,9 @@
         {
             "year":"2016",
             "date":"2016年9月17日(土) - 9月18日(日)",
-            "title":"ジャパンカップ（ドイツＵ−１９交流大会）",
+            "title":"ジャパンカップ２０１６",
             "class":"international",
-            "place":"大阪（梅田地区）",
+            "place":"大阪（梅田東コミュニティ会館）",
             "link":"2016japancup"
         },
         {
@@ -86,7 +86,7 @@
             "date":"2016年11月12日(土)",
             "title":"UCI Cycle-Ball World Cup Final",
             "class":"international",
-            "place":"スイス・ヴィンタートゥール（会場未定）",
+            "place":"スイス・ヴィンタートゥール",
             "link":"2016_CBWCF"
         },
         {
@@ -110,7 +110,7 @@
             "date":"2016年12月17日(土) - 12月18日(日)",
             "title":"第４７回全日本選手権大会",
             "class":"domestic",
-            "place":"未定",
+            "place":"関西大学",
             "link":"2016japan-championship"
         }
     ]
